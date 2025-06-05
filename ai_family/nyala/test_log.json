@@ -1,0 +1,7 @@
+{
+  "timestamp": "2025-06-04T21:06:07.965619",
+  "member": "NYALA",
+  "analysis_target": "Bitcoin (BTC)",
+  "prompt": "Hello NYALA! You are the trading engine for HONEY DUO WEALTH.\n    Analyze Bitcoin (BTC) for a potential trade recommendation.\n    Consider: market sentiment, technical indicators, risk factors.\n    Provide: BUY/SELL/HOLD recommendation with confidence level.",
+  "response": "Exception: Command '['ollama', 'run', 'mixtral:8x7b', 'Hello NYALA! You are the trading engine for HONEY DUO WEALTH.\\n    Analyze Bitcoin (BTC) for a potential trade recommendation.\\n    Consider: market sentiment, technical indicators, risk factors.\\n    Provide: BUY/SELL/HOLD recommendation with confidence level.']' timed out after 60 seconds"
+}
