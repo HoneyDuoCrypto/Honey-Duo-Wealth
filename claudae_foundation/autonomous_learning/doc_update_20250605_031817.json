@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-06-05T03:18:17.865870",
+  "update_plan": {
+    "documents_to_update": [
+      "README.md",
+      "master_blueprint.md",
+      "current_status.json"
+    ],
+    "update_summary": "Document the updated metadata in README.md, blueprint, and current_status.json files.",
+    "key_changes": [
+      "Addition of metadata for tracking the number and categories of examples processed during AI integration, testing, data pipeline, and trading",
+      "Incremental update to metadata of the training process",
+      "The change adds metadata to the training summary file, providing information about the number of examples, categories, and timestamps."
+    ],
+    "priority": "high",
+    "specific_updates": {
+      "README.md": "Update the AI model training configuration section with the latest changes.",
+      "master_blueprint.md": "Update the Integrated Learning and AI Training Process Metadata sections to reflect the metadata updates made to config_examples.json.",
+      "current_status.json": "Update the metadata fields in the training summary file."
+    }
+  },
+  "execution_status": "planned"
+}

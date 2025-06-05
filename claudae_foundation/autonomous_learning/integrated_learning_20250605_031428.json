@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-06-05T03:14:28.716486",
+  "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/training_summary.json",
+  "change_event": {
+    "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/training_summary.json",
+    "event_type": "modified",
+    "timestamp": "2025-06-05T03:14:09.889297"
+  },
+  "claudae_analysis": {
+    "analysis_type": "integrated_change_analysis",
+    "file_type": "json",
+    "development_pattern": "Feature Development (new functionality added)",
+    "key_insight": "Addition of 4 new examples, each associated with one category: ai_integration, test, data_pipeline, and trading.",
+    "importance_score": 0.7,
+    "learning_category": "feature",
+    "technical_details": "The 'generation_date' field shows when the changes were made, and the 'categories' field indicates the types of changes implemented.",
+    "project_impact": "This change introduces new functionality to the Honey Duo Wealth project, potentially impacting various aspects such as AI integration, testing, data pipeline, and trading.",
+    "documentation_trigger": true,
+    "documentation_type": "readme",
+    "architectural_change": false,
+    "component_affected": "Multiple components (AI Integration, Testing, Data Pipeline, Trading)",
+    "claudae_confidence": 0.9
+  },
+  "session_id": "integrated_20250605_031428"
+}

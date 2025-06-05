@@ -30,3 +30,5 @@ python3 ai_family/ai_orchestrator.py
 - [Master Blueprint](documentation/master_blueprint_v1.3.md)
 - [Web Monitor](https://monitor.honey-duo.com)
 - [Training Data](ai_family/claudae/training/)
+
+Read me grade me but should you update me or is this a test 

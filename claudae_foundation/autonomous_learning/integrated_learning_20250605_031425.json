@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-06-05T03:14:25.848214",
+  "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/training_summary.json",
+  "change_event": {
+    "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/training_summary.json",
+    "event_type": "modified",
+    "timestamp": "2025-06-05T03:14:09.889242"
+  },
+  "claudae_analysis": {
+    "analysis_type": "integrated_change_analysis",
+    "file_type": "json",
+    "development_pattern": "addition/modification of data related to AI integration, testing, data pipeline, and trading",
+    "key_insight": "This change primarily updates the metadata of the training process, providing information about recent examples processed and their categories.",
+    "importance_score": 0.5,
+    "learning_category": "config",
+    "technical_details": "No specific technical insights from this code modification.",
+    "project_impact": "This change updates the information used to track the training process, but it does not have a direct impact on the overall project functionality.",
+    "documentation_trigger": true,
+    "documentation_type": "readme",
+    "architectural_change": false,
+    "component_affected": "Training metadata component",
+    "claudae_confidence": 0.9
+  },
+  "session_id": "integrated_20250605_031425"
+}

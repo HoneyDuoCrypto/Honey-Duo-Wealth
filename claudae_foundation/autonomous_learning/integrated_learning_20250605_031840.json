@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-06-05T03:18:40.499264",
+  "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/training_summary.json",
+  "change_event": {
+    "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/training_summary.json",
+    "event_type": "modified",
+    "timestamp": "2025-06-05T03:15:10.259427"
+  },
+  "claudae_analysis": {
+    "analysis_type": "integrated_change_analysis",
+    "file_type": "json",
+    "development_pattern": "configuration update",
+    "key_insight": "This change involves the configuration settings for the HONEY DUO WEALTH project.",
+    "importance_score": 0.6,
+    "learning_category": "config",
+    "technical_details": "The total number of examples in the training set has been updated to 40 and there are changes in multiple configuration categories.",
+    "project_impact": "This change may affect the training process and outcomes for the AI models within the project.",
+    "documentation_trigger": true,
+    "documentation_type": "handoff",
+    "architectural_change": false,
+    "component_affected": "Training Configuration",
+    "claudae_confidence": 0.9
+  },
+  "session_id": "integrated_20250605_031840"
+}

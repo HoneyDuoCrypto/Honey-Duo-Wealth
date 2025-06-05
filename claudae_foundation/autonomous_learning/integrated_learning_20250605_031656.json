@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-06-05T03:16:56.912394",
+  "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/data_examples.json",
+  "change_event": {
+    "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/data_examples.json",
+    "event_type": "created",
+    "timestamp": "2025-06-05T03:14:40.922380"
+  },
+  "claudae_analysis": {
+    "analysis_type": "integrated_change_analysis",
+    "file_type": "json",
+    "development_pattern": "data change",
+    "key_insight": "Data change for generating 4 examples in various project categories.",
+    "importance_score": 0.5,
+    "learning_category": "data",
+    "technical_details": "The data represents information about 4 examples generated, each categorized under 'architecture', 'ai_integration', 'test', 'data_pipeline', and 'trading'. No specific technical insights are provided in the change.",
+    "project_impact": "The change may impact the learning process of the autonomous system by providing new data examples. It does not seem to affect the overall project architecture or components directly.",
+    "documentation_trigger": true,
+    "documentation_type": "readme",
+    "architectural_change": false,
+    "component_affected": "Not applicable (data change)",
+    "claudae_confidence": 0.9
+  },
+  "session_id": "integrated_20250605_031656"
+}

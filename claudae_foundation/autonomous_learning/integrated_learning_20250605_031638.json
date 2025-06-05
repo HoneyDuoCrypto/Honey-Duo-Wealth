@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-06-05T03:16:38.705036",
+  "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/training_summary.json",
+  "change_event": {
+    "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/training_summary.json",
+    "event_type": "modified",
+    "timestamp": "2025-06-05T03:14:40.073472"
+  },
+  "claudae_analysis": {
+    "analysis_type": "integrated_change_analysis",
+    "file_type": "json",
+    "development_pattern": "Config modification",
+    "key_insight": "This change involves configuration adjustments across various modules.",
+    "importance_score": 0.6,
+    "learning_category": "config",
+    "technical_details": "The configurations for architecture, data, trading, and feature components have been updated.",
+    "project_impact": "Changes in configurations may impact the functionality of various modules affecting the overall performance of the application.",
+    "documentation_trigger": true,
+    "documentation_type": "handoff",
+    "architectural_change": false,
+    "component_affected": "Multiple components",
+    "claudae_confidence": 0.8
+  },
+  "session_id": "integrated_20250605_031638"
+}

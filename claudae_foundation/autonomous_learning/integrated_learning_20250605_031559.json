@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-06-05T03:15:59.052452",
+  "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/feature_examples.json",
+  "change_event": {
+    "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/feature_examples.json",
+    "event_type": "created",
+    "timestamp": "2025-06-05T03:14:28.717506"
+  },
+  "claudae_analysis": {
+    "analysis_type": "integrated_change_analysis",
+    "file_type": "json",
+    "development_pattern": "new functionality added",
+    "key_insight": "Four new examples have been integrated into the system, each associated with one of the following categories: ai_integration, test, data_pipeline, and trading.",
+    "importance_score": 0.7,
+    "learning_category": "feature",
+    "technical_details": "The new examples do not seem to contain any specific technical insights or patterns that require immediate attention.",
+    "project_impact": "This change expands the system's knowledge base and may improve its performance in the relevant categories.",
+    "documentation_trigger": true,
+    "documentation_type": "readme",
+    "architectural_change": false,
+    "component_affected": "The overall system",
+    "claudae_confidence": 0.9
+  },
+  "session_id": "integrated_20250605_031559"
+}

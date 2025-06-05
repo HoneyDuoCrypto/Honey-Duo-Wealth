@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-06-05T03:14:34.498292",
+  "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/training_summary.json",
+  "change_event": {
+    "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/training_summary.json",
+    "event_type": "modified",
+    "timestamp": "2025-06-05T03:14:09.889853"
+  },
+  "claudae_analysis": {
+    "analysis_type": "integrated_change_analysis",
+    "file_type": "json",
+    "development_pattern": "Feature development (new category added)",
+    "key_insight": "New categories have been added to the training summary file, signifying a focus on diversification of project tasks.",
+    "importance_score": 0.8,
+    "learning_category": "architecture",
+    "technical_details": "No new functions or classes were introduced in this change, only a reorganization of categories within the training summary file.",
+    "project_impact": "This changes expands the scope of tasks tracked during training, potentially improving the versatility and adaptability of the Honey Duo Wealth project.",
+    "documentation_trigger": true,
+    "documentation_type": "readme",
+    "architectural_change": false,
+    "component_affected": "Training summary",
+    "claudae_confidence": 0.9
+  },
+  "session_id": "integrated_20250605_031434"
+}

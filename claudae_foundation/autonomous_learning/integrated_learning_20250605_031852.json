@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-06-05T03:18:52.619873",
+  "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/training_summary.json",
+  "change_event": {
+    "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/training_summary.json",
+    "event_type": "modified",
+    "timestamp": "2025-06-05T03:15:10.260183"
+  },
+  "claudae_analysis": {
+    "analysis_type": "integrated_change_analysis",
+    "file_type": "json",
+    "development_pattern": "Configuration Updates",
+    "key_insight": "Changes have been made to the configuration settings, likely affecting various aspects of the system.",
+    "importance_score": 0.8,
+    "learning_category": "config",
+    "technical_details": "The 'generation_date' field suggests that new configurations were saved at a specific timestamp. The 'categories' field indicates that 20 out of 45 total examples relate to configuration changes.",
+    "project_impact": "These changes may require adjustments in various components throughout the system.",
+    "documentation_trigger": true,
+    "documentation_type": "handoff",
+    "architectural_change": false,
+    "component_affected": "The entire system",
+    "claudae_confidence": 0.9
+  },
+  "session_id": "integrated_20250605_031852"
+}

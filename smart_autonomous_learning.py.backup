@@ -1,0 +1,340 @@
+#!/usr/bin/env python3
+"""
+CLAUDAE Smart Auto-Cycling Learning System
+==========================================
+
+States: DORMANT (watching) → ACTIVE (analyzing) → ANALYSIS (summarizing) → SLEEPING → DORMANT
+"""
+
+import asyncio
+import json
+import time
+import hashlib
+import logging
+from datetime import datetime
+from pathlib import Path
+from typing import Dict, List, Optional, Set
+from dataclasses import dataclass, asdict
+from enum import Enum
+import requests
+from watchdog.observers import Observer
+from watchdog.events import FileSystemEventHandler
+
+class SystemState(Enum):
+    DORMANT = "dormant"     # Lightweight monitoring
+    ACTIVE = "active"       # Full CLAUDAE analysis
+    ANALYSIS = "analysis"   # Cycle summary generation
+    SLEEPING = "sleeping"   # Brief pause between cycles
+
+@dataclass
+class LearningCycle:
+    cycle_id: str
+    start_time: str
+    end_time: Optional[str] = None
+    files_changed: List[str] = None
+    learnings_captured: List[Dict] = None
+    summary: Optional[Dict] = None
+    
+    def __post_init__(self):
+        if self.files_changed is None:
+            self.files_changed = []
+        if self.learnings_captured is None:
+            self.learnings_captured = []
+
+class SmartChangeHandler(FileSystemEventHandler):
+    def __init__(self, learning_system):
+        self.learning_system = learning_system
+        self.last_change_time = time.time()
+    
+    def on_modified(self, event):
+        if event.is_directory:
+            return
+        file_path = Path(event.src_path)
+        if self.learning_system.should_analyze_file(file_path):
+            self.last_change_time = time.time()
+            asyncio.create_task(self.learning_system.handle_file_change(file_path))
+
+class SmartAutonomousLearning:
+    def __init__(self, project_root: str = "/home/honey-duo-wealth/honey_duo_wealth"):
+        self.project_root = Path(project_root)
+        self.learning_dir = self.project_root / "claudae_foundation" / "smart_learning"
+        self.learning_dir.mkdir(parents=True, exist_ok=True)
+        
+        # System state
+        self.state = SystemState.DORMANT
+        self.current_cycle: Optional[LearningCycle] = None
+        self.observer = Observer()
+        self.change_handler = SmartChangeHandler(self)
+        
+        # Timing (adjustable)
+        self.inactivity_timeout = 600  # 10 minutes
+        self.analysis_delay = 30       # 30 seconds after last change
+        self.sleep_between_cycles = 60 # 1 minute between cycles
+        
+        # File tracking
+        self.pending_files: Set[Path] = set()
+        self.file_hashes: Dict[str, str] = {}
+        
+        # CLAUDAE interface
+        self.claudae_model = "mistral:7b"
+        self.claudae_url = "http://localhost:11434"
+        
+        self.setup_logging()
+        
+    def setup_logging(self):
+        log_file = self.learning_dir / "smart_system.log"
+        logging.basicConfig(
+            level=logging.INFO,
+            format='%(asctime)s - SMART - %(levelname)s - %(message)s',
+            handlers=[
+                logging.FileHandler(log_file),
+                logging.StreamHandler()
+            ]
+        )
+        self.logger = logging.getLogger(__name__)
+    
+    def should_analyze_file(self, file_path: Path) -> bool:
+        try:
+            rel_path = file_path.relative_to(self.project_root)
+            
+            # Skip system files
+            skip_patterns = [
+                'venv/', '.git/', '__pycache__/',
+                'claudae_foundation/smart_learning/',
+                'claudae_foundation/autonomous_learning/',
+                '.db', '.sqlite', 'training_summary.json'
+            ]
+            
+            for pattern in skip_patterns:
+                if pattern in str(rel_path):
+                    return False
+            
+            # Include user files
+            include_extensions = {'.py', '.md', '.json', '.yaml', '.yml', '.txt'}
+            return file_path.suffix.lower() in include_extensions
+            
+        except ValueError:
+            return False
+    
+    async def handle_file_change(self, file_path: Path):
+        if self.state == SystemState.DORMANT:
+            await self.start_active_cycle()
+        self.pending_files.add(file_path)
+        if self.current_cycle:
+            self.change_handler.last_change_time = time.time()
+    
+    async def start_active_cycle(self):
+        cycle_id = f"smart_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+        self.current_cycle = LearningCycle(
+            cycle_id=cycle_id,
+            start_time=datetime.now().isoformat()
+        )
+        self.state = SystemState.ACTIVE
+        self.logger.info(f"🚀 Started active learning cycle: {cycle_id}")
+        asyncio.create_task(self.monitor_activity())
+    
+    async def monitor_activity(self):
+        while self.state == SystemState.ACTIVE:
+            await asyncio.sleep(5)
+            time_since_change = time.time() - self.change_handler.last_change_time
+            
+            if time_since_change >= self.analysis_delay:
+                if self.pending_files:
+                    await self.process_pending_files()
+                
+                if time_since_change >= self.inactivity_timeout:
+                    await self.start_analysis_phase()
+                    break
+    
+    async def process_pending_files(self):
+        if not self.pending_files:
+            return
+        
+        files_to_process = list(self.pending_files)
+        self.pending_files.clear()
+        
+        for file_path in files_to_process:
+            try:
+                if not await self.file_actually_changed(file_path):
+                    continue
+                
+                learning = await self.analyze_file_with_claudae(file_path)
+                if learning:
+                    self.current_cycle.learnings_captured.append(learning)
+                    self.current_cycle.files_changed.append(str(file_path))
+                    self.logger.info(f"🧠 Learning captured from {file_path.name}")
+                
+            except Exception as e:
+                self.logger.error(f"Error processing {file_path}: {e}")
+    
+    async def file_actually_changed(self, file_path: Path) -> bool:
+        try:
+            if not file_path.exists():
+                return False
+            content = file_path.read_text(encoding='utf-8')
+            file_hash = hashlib.md5(content.encode()).hexdigest()
+            old_hash = self.file_hashes.get(str(file_path))
+            self.file_hashes[str(file_path)] = file_hash
+            return old_hash != file_hash
+        except Exception:
+            return False
+    
+    async def analyze_file_with_claudae(self, file_path: Path) -> Optional[Dict]:
+        try:
+            content = file_path.read_text(encoding='utf-8')
+            
+            prompt = f"""You are CLAUDAE analyzing HONEY DUO WEALTH development patterns.
+
+FILE: {file_path}
+CONTENT: {content[:1500]}
+
+Identify the development pattern. Respond with JSON:
+{{"pattern_type": "Test Development|Refactoring|New Features|Bug Fixes|Integration|Documentation", "confidence": 0.0_to_1.0, "description": "brief_description", "significance": "project_impact"}}"""
+            
+            response = requests.post(
+                f"{self.claudae_url}/api/generate",
+                json={
+                    "model": self.claudae_model,
+                    "prompt": prompt,
+                    "stream": False,
+                    "options": {"temperature": 0.2}
+                },
+                timeout=60
+            )
+            
+            if response.status_code == 200:
+                claudae_response = response.json().get('response', '')
+                try:
+                    start = claudae_response.find('{')
+                    end = claudae_response.rfind('}') + 1
+                    if start >= 0 and end > start:
+                        analysis = json.loads(claudae_response[start:end])
+                        analysis.update({
+                            'file_path': str(file_path),
+                            'timestamp': datetime.now().isoformat(),
+                            'cycle_id': self.current_cycle.cycle_id
+                        })
+                        return analysis
+                except json.JSONDecodeError:
+                    pass
+        except Exception as e:
+            self.logger.error(f"CLAUDAE analysis failed: {e}")
+        return None
+    
+    async def start_analysis_phase(self):
+        self.state = SystemState.ANALYSIS
+        self.logger.info(f"📊 Starting analysis phase for cycle {self.current_cycle.cycle_id}")
+        
+        summary = await self.generate_cycle_summary()
+        self.current_cycle.summary = summary
+        self.current_cycle.end_time = datetime.now().isoformat()
+        
+        await self.save_cycle_data()
+        await self.update_training_systems()
+        await self.enter_sleep_phase()
+    
+    async def generate_cycle_summary(self) -> Dict:
+        if not self.current_cycle.learnings_captured:
+            return {"type": "no_learning", "description": "No patterns detected"}
+        
+        patterns = [l.get('pattern_type', 'unknown') for l in self.current_cycle.learnings_captured]
+        avg_confidence = sum(l.get('confidence', 0) for l in self.current_cycle.learnings_captured) / len(self.current_cycle.learnings_captured)
+        
+        summary = {
+            "cycle_id": self.current_cycle.cycle_id,
+            "duration_minutes": self._calculate_cycle_duration(),
+            "files_analyzed": len(self.current_cycle.files_changed),
+            "patterns_detected": len(patterns),
+            "unique_patterns": list(set(patterns)),
+            "average_confidence": round(avg_confidence, 3),
+            "dominant_pattern": max(set(patterns), key=patterns.count) if patterns else None
+        }
+        
+        self.logger.info(f"📋 Cycle summary: {summary['patterns_detected']} patterns, {summary['average_confidence']} confidence")
+        return summary
+    
+    def _calculate_cycle_duration(self) -> float:
+        if not self.current_cycle.start_time:
+            return 0
+        start = datetime.fromisoformat(self.current_cycle.start_time)
+        return (datetime.now() - start).total_seconds() / 60
+    
+    async def save_cycle_data(self):
+        cycle_file = self.learning_dir / f"cycle_{self.current_cycle.cycle_id}.json"
+        cycle_data = asdict(self.current_cycle)
+        with open(cycle_file, 'w') as f:
+            json.dump(cycle_data, f, indent=2)
+        self.logger.info(f"💾 Saved cycle: {cycle_file.name}")
+    
+    async def update_training_systems(self):
+        high_confidence = [l for l in self.current_cycle.learnings_captured if l.get('confidence', 0) > 0.6]
+        if high_confidence:
+            training_file = self.learning_dir / f"training_feed_{self.current_cycle.cycle_id}.json"
+            training_data = {
+                "cycle_summary": self.current_cycle.summary,
+                "significant_learnings": high_confidence,
+                "generated": datetime.now().isoformat()
+            }
+            with open(training_file, 'w') as f:
+                json.dump(training_data, f, indent=2)
+            self.logger.info(f"🎓 Fed {len(high_confidence)} learnings to training")
+    
+    async def enter_sleep_phase(self):
+        self.state = SystemState.SLEEPING
+        self.logger.info(f"😴 Sleeping for {self.sleep_between_cycles} seconds")
+        await asyncio.sleep(self.sleep_between_cycles)
+        
+        self.state = SystemState.DORMANT
+        self.current_cycle = None
+        self.pending_files.clear()
+        self.logger.info("👁️ Returned to dormant monitoring")
+    
+    async def start_smart_monitoring(self):
+        self.logger.info("🎯 CLAUDAE Smart Auto-Cycling Learning System Starting")
+        self.logger.info(f"📁 Monitoring: {self.project_root}")
+        self.logger.info(f"⏱️ Inactivity timeout: {self.inactivity_timeout/60} minutes")
+        
+        self.observer.schedule(self.change_handler, str(self.project_root), recursive=True)
+        self.observer.start()
+        
+        try:
+            while True:
+                await asyncio.sleep(10)
+        except KeyboardInterrupt:
+            await self.graceful_shutdown()
+    
+    async def graceful_shutdown(self):
+        self.logger.info("🔄 Graceful shutdown initiated")
+        
+        if self.state == SystemState.ACTIVE and self.current_cycle:
+            self.logger.info("⏳ Completing active cycle")
+            await self.process_pending_files()
+            await self.start_analysis_phase()
+        
+        self.observer.stop()
+        self.observer.join()
+        
+        # Generate handoff
+        cycle_files = list(self.learning_dir.glob("cycle_*.json"))
+        handoff = {
+            "shutdown_time": datetime.now().isoformat(),
+            "system_type": "smart_auto_cycling",
+            "total_cycles": len(cycle_files),
+            "state_at_shutdown": self.state.value
+        }
+        
+        handoff_file = self.learning_dir / "shutdown_handoff.json"
+        with open(handoff_file, 'w') as f:
+            json.dump(handoff, f, indent=2)
+        
+        print(f"\n🚀 SMART LEARNING SYSTEM - SESSION HANDOFF")
+        print(f"Total cycles: {len(cycle_files)}")
+        print(f"Handoff saved: {handoff_file}")
+        print("Next session: Just run this script again!")
+
+async def main():
+    system = SmartAutonomousLearning()
+    await system.start_smart_monitoring()
+
+if __name__ == "__main__":
+    asyncio.run(main())

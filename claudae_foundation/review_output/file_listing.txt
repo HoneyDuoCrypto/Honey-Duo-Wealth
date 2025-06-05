@@ -1,0 +1,58 @@
+CLAUDAE Migration - Complete File Listing
+Generated: 2025-06-05T02:25:58.789339
+
+=== ORIGINAL FILES (Backed Up) ===
+README.md
+ai_family/claudae/test_log.json
+ai_family/claudae/training/code_examples/ai_integration_examples.json
+ai_family/claudae/training/code_examples/daily_log_2025-06-04.json
+ai_family/claudae/training/code_examples/data_pipeline_examples.json
+ai_family/claudae/training/code_examples/test_examples.json
+ai_family/claudae/training/code_examples/trading_examples.json
+ai_family/claudae/training/session_20250604.json
+ai_family/claudae/training/sessions/ai_data_integration_20250604.json
+ai_family/claudae/training/sessions/market_data_pipeline_20250604.json
+ai_family/claudae/training/sessions/nyala_integration_20250604.json
+ai_family/claudae/training/sessions/test_session_20250604.json
+ai_family/claudae/training/training_summary.json
+ai_family/deon/test_log.json
+ai_family/models/claudae/deployment_log.json
+ai_family/models/claudae/production/metadata.json
+ai_family/nyala/test_log.json
+ai_family/training_data/datasets/claudae_training_20250604.json
+ai_family/versions/claudae/v1/metadata.json
+documentation/master_blueprint.md
+documentation/progress_report_20250604.md
+project_memory/backup_june5_2241.md
+project_memory/current_status.json
+project_memory/master_blueprint.md
+project_memory/session_handoff_june5.md
+
+=== MIGRATED FILES (CLAUDAE Organized) ===
+blueprint/claudae_training_20250604_migrated.json
+blueprint/daily_log_2025-06-04_migrated.json
+blueprint/data_pipeline_examples_migrated.json
+blueprint/master_blueprint_migrated.md
+blueprint/trading_examples_migrated.json
+code_example/ai_integration_examples_migrated.json
+code_example/test_examples_migrated.json
+config/metadata_migrated.json
+configuration/metadata_migrated.json
+documentation/master_blueprint_migrated.md
+documentation/training_summary_migrated.json
+session/ai_data_integration_20250604_migrated.json
+session/market_data_pipeline_20250604_migrated.json
+session/nyala_integration_20250604_migrated.json
+session/session_20250604_migrated.json
+session/session_handoff_june5_migrated.md
+session/status/test_session_20250604_migrated.json
+session handoff document/backup_june5_2241_migrated.md
+status/README_migrated.md
+status/current_status_migrated.json
+status/deployment_log_migrated.json
+status/progress_report_20250604_migrated.md
+status/test_log_migrated.json
+
+=== MIGRATION METADATA ===
+migration_report.json
+migration_summary.json

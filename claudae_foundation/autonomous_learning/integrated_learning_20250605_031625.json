@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-06-05T03:16:25.536146",
+  "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/architecture_examples.json",
+  "change_event": {
+    "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/architecture_examples.json",
+    "event_type": "modified",
+    "timestamp": "2025-06-05T03:14:34.499055"
+  },
+  "claudae_analysis": {
+    "analysis_type": "integrated_change_analysis",
+    "file_type": "json",
+    "development_pattern": "Feature development",
+    "key_insight": "New categories have been added to the training summary file, indicating a focus on diversification of project tasks.",
+    "importance_score": 0.7,
+    "learning_category": "architecture",
+    "technical_details": "The change involves adding new categories in the 'categories' object of the JSON file representing training examples.",
+    "project_impact": "This affects the overall structure and organization of data within the project.",
+    "documentation_trigger": true,
+    "documentation_type": "readme",
+    "architectural_change": true,
+    "component_affected": "Training summary file",
+    "claudae_confidence": 0.9
+  },
+  "session_id": "integrated_20250605_031625"
+}

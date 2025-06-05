@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-06-05T03:15:01.275258",
+  "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/daily_log_2025-06-05.json",
+  "change_event": {
+    "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/daily_log_2025-06-05.json",
+    "event_type": "created",
+    "timestamp": "2025-06-05T03:14:15.533697"
+  },
+  "claudae_analysis": {
+    "analysis_type": "integrated_change_analysis",
+    "file_type": "json",
+    "development_pattern": "Single Task Resolution",
+    "key_insight": "The change adds metadata to the training summary file and processes 4 examples distributed across 4 categories, with one example in each category.",
+    "importance_score": 0.6,
+    "learning_category": "config",
+    "technical_details": "This change modifies a configuration file, adding metadata about the number of examples, categories, and timestamps.",
+    "project_impact": "This change affects the data tracking and reporting for the Integrated Learning system.",
+    "documentation_trigger": true,
+    "documentation_type": "readme",
+    "architectural_change": false,
+    "component_affected": "Integrated Learning System",
+    "claudae_confidence": 0.9
+  },
+  "session_id": "integrated_20250605_031501"
+}

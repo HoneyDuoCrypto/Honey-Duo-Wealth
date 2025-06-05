@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-06-05T03:14:20.431313",
+  "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/training_summary.json",
+  "change_event": {
+    "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/training_summary.json",
+    "event_type": "modified",
+    "timestamp": "2025-06-05T03:14:09.888608"
+  },
+  "claudae_analysis": {
+    "analysis_type": "integrated_change_analysis",
+    "file_type": "json",
+    "development_pattern": "Single Task Resolution",
+    "key_insight": "This change involves the processing of 4 examples distributed across 4 categories, with one example in each category.",
+    "importance_score": 0.6,
+    "learning_category": "configuration",
+    "technical_details": "The 'generation_date' and 'total_examples' fields indicate when the data was generated and the total number of examples respectively.",
+    "project_impact": "This change may not have a significant direct impact on the overall project, but it is part of the data preparation process which can influence model performance.",
+    "documentation_trigger": true,
+    "documentation_type": "readme",
+    "architectural_change": false,
+    "component_affected": "Data Preparation Component",
+    "claudae_confidence": 0.9
+  },
+  "session_id": "integrated_20250605_031420"
+}

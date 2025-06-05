@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-06-05T03:14:15.531789",
+  "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/training_summary.json",
+  "change_event": {
+    "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/training_summary.json",
+    "event_type": "modified",
+    "timestamp": "2025-06-05T03:14:09.888535"
+  },
+  "claudae_analysis": {
+    "analysis_type": "integrated_change_analysis",
+    "file_type": "json",
+    "development_pattern": "addition of data for tracking purposes",
+    "key_insight": "The change adds metadata to the training summary file, providing information about the number of examples, categories, and timestamps.",
+    "importance_score": 0.6,
+    "learning_category": "configuration",
+    "technical_details": "The data added does not seem to affect the functionality directly but provides additional context for understanding the training process.",
+    "project_impact": "This change is likely to have a minor impact on the overall project by improving the visibility of the training process.",
+    "documentation_trigger": true,
+    "documentation_type": "readme",
+    "architectural_change": false,
+    "component_affected": "Training Summary",
+    "claudae_confidence": 0.9
+  },
+  "session_id": "integrated_20250605_031415"
+}

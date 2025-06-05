@@ -1,0 +1,25 @@
+{
+  "cycle_summary": {
+    "cycle_id": "smart_20250605_041349",
+    "duration_minutes": 1.0354934833333334,
+    "files_analyzed": 1,
+    "patterns_detected": 1,
+    "unique_patterns": [
+      "Test Development"
+    ],
+    "average_confidence": 0.9,
+    "dominant_pattern": "Test Development"
+  },
+  "significant_learnings": [
+    {
+      "pattern_type": "Test Development",
+      "confidence": 0.9,
+      "description": "The code demonstrates a simple function that prints out the stages of a smart learning cycle and returns a string indicating the cycle has been triggered. This suggests it is being used for testing purposes to ensure the smart learning cycle functionality works as expected.",
+      "significance": "Low project impact",
+      "file_path": "/home/honey-duo-wealth/honey_duo_wealth/cycle_demo.py",
+      "timestamp": "2025-06-05T04:14:21.445970",
+      "cycle_id": "smart_20250605_041349"
+    }
+  ],
+  "generated": "2025-06-05T04:14:51.457914"
+}

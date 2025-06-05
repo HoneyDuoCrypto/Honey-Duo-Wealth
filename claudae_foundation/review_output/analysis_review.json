@@ -1,0 +1,1072 @@
+{
+  "generation_time": "2025-06-05T02:25:58.792112",
+  "migration_overview": {
+    "start_time": "2025-06-05T02:06:33.002194",
+    "phase": "document_migration",
+    "documents_found": 25,
+    "documents_migrated": 25,
+    "claudae_analyses": 25,
+    "migration_results": [
+      {
+        "original_path": "/home/honey-duo-wealth/honey_duo_wealth/README.md",
+        "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/status/README_migrated.md",
+        "analysis": {
+          "file_path": "/home/honey-duo-wealth/honey_duo_wealth/README.md",
+          "content_type": "status",
+          "importance_score": 0.8,
+          "key_topics": [
+            "AI Portfolio Guardian",
+            "Phase 1: Foundation Complete",
+            "System Health"
+          ],
+          "relationships": [
+            "master_blueprint_v1.3.md",
+            "ai_family/ai_orchestrator.py"
+          ],
+          "summary": "This document provides the current status of the HONEY DUO WEALTH AI Portfolio Guardian, including its phase completion, system health overview, and quick start instructions.",
+          "claudae_confidence": 0.95,
+          "processing_time": 2.7529261112213135
+        },
+        "success": true,
+        "error_message": null
+      },
+      {
+        "original_path": "/home/honey-duo-wealth/honey_duo_wealth/documentation/progress_report_20250604.md",
+        "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/status/progress_report_20250604_migrated.md",
+        "analysis": {
+          "file_path": "/home/honey-duo-wealth/honey_duo_wealth/documentation/progress_report_20250604.md",
+          "content_type": "status",
+          "importance_score": 0.8,
+          "key_topics": [
+            "AI Family Status",
+            "Component Status",
+            "Next Priorities",
+            "Training Progress"
+          ],
+          "relationships": [
+            "/home/honey-duo-wealth/honey_duo_wealth/documentation/ai_family_status_20250604.md",
+            "/home/honey-duo-wealth/honey_duo_wealth/documentation/component_status_20250604.md"
+          ],
+          "summary": "This document provides the status of AI family members (CLAUDAE, NYALA, DEON) and components within the HONEY DUO WEALTH project, including the market data pipeline, trading engine, communication system, and training progress for NYALA. The next priorities are to complete the market data pipeline and integrate NYALA's trading engine.",
+          "claudae_confidence": 0.95,
+          "processing_time": 2.5739333629608154
+        },
+        "success": true,
+        "error_message": null
+      },
+      {
+        "original_path": "/home/honey-duo-wealth/honey_duo_wealth/documentation/master_blueprint.md",
+        "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/documentation/master_blueprint_migrated.md",
+        "analysis": {
+          "file_path": "/home/honey-duo-wealth/honey_duo_wealth/documentation/master_blueprint.md",
+          "content_type": "documentation",
+          "importance_score": 1.0,
+          "key_topics": [
+            "AI family",
+            "Family wealth protection",
+            "Project mission",
+            "System architecture"
+          ],
+          "relationships": [
+            "/home/honey-duo-wealth/honey_duo_wealth/documentation/ai_family_roles.md",
+            "/home/honey-duo-wealth/honey_duo_wealth/systems/CLAUDAE/configuration.yml"
+          ],
+          "summary": "This document outlines the mission, system architecture, and key components of the HONEY DUO WEALTH project, a family AI portfolio guardian designed to protect and grow family wealth through intelligent, measured, and safe investment decisions.",
+          "claudae_confidence": 1.0,
+          "processing_time": 2.3028838634490967
+        },
+        "success": true,
+        "error_message": null
+      },
+      {
+        "original_path": "/home/honey-duo-wealth/honey_duo_wealth/project_memory/session_handoff_june5.md",
+        "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/session/session_handoff_june5_migrated.md",
+        "analysis": {
+          "file_path": "/home/honey-duo-wealth/honey_duo_wealth/project_memory/session_handoff_june5.md",
+          "content_type": "session",
+          "importance_score": 0.9,
+          "key_topics": [
+            "AI Training Infrastructure",
+            "Production Monitoring System",
+            "Testing Framework",
+            "Project Management"
+          ],
+          "relationships": [
+            "/home/honey-duo-wealth/honey_duo_wealth/project_memory/master_blueprint.md",
+            "/home/honey-duo-wealth/honey_duo_wealth/project_memory/ai_family_development.md"
+          ],
+          "summary": "This document details the major accomplishments of the HONEY DUO WEALTH project on June 5, 2025, including the completion of AI training infrastructure, production monitoring system, comprehensive testing framework, and advanced project management.",
+          "claudae_confidence": 1.0,
+          "processing_time": 2.278691291809082
+        },
+        "success": true,
+        "error_message": null
+      },
+      {
+        "original_path": "/home/honey-duo-wealth/honey_duo_wealth/project_memory/master_blueprint.md",
+        "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/blueprint/master_blueprint_migrated.md",
+        "analysis": {
+          "file_path": "/home/honey-duo-wealth/honey_duo_wealth/project_memory/master_blueprint.md",
+          "content_type": "blueprint",
+          "importance_score": 1.0,
+          "key_topics": [
+            "AI family",
+            "Family wealth protection",
+            "Project mission",
+            "System architecture",
+            "Hardware specifications"
+          ],
+          "relationships": [
+            "/home/honey-duo-wealth/honey_duo_wealth/project_memory/ai_family_development.md",
+            "/home/honey-duo-wealth/honey_duo_wealth/project_memory/risk_management_strategy.md"
+          ],
+          "summary": "This document outlines the master system blueprint and complete project archive for HONEY DUO WEALTH, a family AI portfolio guardian. It details the mission statement, complete system architecture including hardware specifications, and memory allocation for the AI family (CLAUDAE, NYALA, and DEON).",
+          "claudae_confidence": 1.0,
+          "processing_time": 2.5801303386688232
+        },
+        "success": true,
+        "error_message": null
+      },
+      {
+        "original_path": "/home/honey-duo-wealth/honey_duo_wealth/project_memory/backup_june5_2241.md",
+        "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/session handoff document/backup_june5_2241_migrated.md",
+        "analysis": {
+          "file_path": "/home/honey-duo-wealth/honey_duo_wealth/project_memory/backup_june5_2241.md",
+          "content_type": "session handoff document",
+          "importance_score": 0.8,
+          "key_topics": [
+            "AI Family Optimization",
+            "System Monitoring Dashboard",
+            "Remote Access Infrastructure",
+            "Development Environment"
+          ],
+          "relationships": [
+            "/home/honey-duo-wealth/honey_duo_wealth/project_memory/master_blueprint.md",
+            "/home/honey-duo-wealth/honey_duo_wealth/system_status.md"
+          ],
+          "summary": "This document details the major accomplishments during the June 4-5, 2025 session of the HONEY DUO WEALTH project, including AI Family Optimization, System Monitoring Dashboard setup, Remote Access Infrastructure configuration, and Development Environment preparation. The focus is on enhancing the family wealth protection system.",
+          "claudae_confidence": 1.0,
+          "processing_time": 2.57804799079895
+        },
+        "success": true,
+        "error_message": null
+      },
+      {
+        "original_path": "/home/honey-duo-wealth/honey_duo_wealth/project_memory/current_status.json",
+        "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/status/current_status_migrated.json",
+        "analysis": {
+          "file_path": "/home/honey-duo-wealth/honey_duo_wealth/project_memory/current_status.json",
+          "content_type": "status",
+          "importance_score": 0.9,
+          "key_topics": [
+            "AI Family Status",
+            "Component Status",
+            "Recent Changes",
+            "Next Priorities"
+          ],
+          "relationships": [
+            "/home/honey-duo-wealth/honey_duo_wealth/project_memory/component_status.json",
+            "/home/honey-duo-wealth/honey_duo_wealth/project_memory/ai_family_status.json"
+          ],
+          "summary": "This document provides the current status of AI family members (CLAUDAE, NYALA, DEON) and their associated components within the HONEY DUO WEALTH project, detailing recent changes and next priorities for improving the system.",
+          "claudae_confidence": 1.0,
+          "processing_time": 2.1220905780792236
+        },
+        "success": true,
+        "error_message": null
+      },
+      {
+        "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/deon/test_log.json",
+        "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/status/test_log_migrated.json",
+        "analysis": {
+          "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/deon/test_log.json",
+          "content_type": "status",
+          "importance_score": 0.8,
+          "key_topics": [
+            "AI family member status",
+            "Trade Risk Analysis",
+            "Family wealth protection"
+          ],
+          "relationships": [
+            "/home/honey-duo-wealth/honey_duo_wealth/ai_family/deon/trade_risk_analysis.json"
+          ],
+          "summary": "This document contains the status of DEON, an AI family member, during a Trade Risk Analysis for HONEY DUO WEALTH. The trade under assessment was to BUY Bitcoin at $43,000 with a position size of $200.",
+          "claudae_confidence": 1.0,
+          "processing_time": 1.9327101707458496
+        },
+        "success": true,
+        "error_message": null
+      },
+      {
+        "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/nyala/test_log.json",
+        "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/status/test_log_migrated.json",
+        "analysis": {
+          "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/nyala/test_log.json",
+          "content_type": "status",
+          "importance_score": 0.5,
+          "key_topics": [
+            "AI trading engine status",
+            "Bitcoin (BTC)",
+            "Trade recommendation"
+          ],
+          "relationships": [
+            "/home/honey-duo-wealth/honey_duo_wealth/ai_family/deon/trading_status.json"
+          ],
+          "summary": "This document contains the status of NYALA, the AI trading engine for HONEY DUO WEALTH, regarding its analysis of Bitcoin (BTC) for a potential trade recommendation.",
+          "claudae_confidence": 0.5,
+          "processing_time": 1.7151646614074707
+        },
+        "success": true,
+        "error_message": null
+      },
+      {
+        "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/test_log.json",
+        "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/status/test_log_migrated.json",
+        "analysis": {
+          "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/test_log.json",
+          "content_type": "status",
+          "importance_score": 0.9,
+          "key_topics": [
+            "Portfolio Performance",
+            "Risk Management",
+            "Compliance",
+            "Client Communications",
+            "System Maintenance"
+          ],
+          "relationships": [
+            "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/quarterly_performance_report.json"
+          ],
+          "summary": "This document provides a brief status report on the HONEY DUO WEALTH system, focusing on portfolio performance, risk management, compliance, client communications, and system maintenance.",
+          "claudae_confidence": 1.0,
+          "processing_time": 1.8809843063354492
+        },
+        "success": true,
+        "error_message": null
+      },
+      {
+        "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/versions/claudae/v1/metadata.json",
+        "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/config/metadata_migrated.json",
+        "analysis": {
+          "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/versions/claudae/v1/metadata.json",
+          "content_type": "config",
+          "importance_score": 0.9,
+          "key_topics": [
+            "AI configuration",
+            "AI performance",
+            "AI validation"
+          ],
+          "relationships": [
+            "/home/honey-duo-wealth/honey_duo_wealth/ai_family/versions/claudae/v1/training_data.json"
+          ],
+          "summary": "This document contains the configuration and validation results of AI model 'claudae' version v1, including base model, performance metrics, and validation results.",
+          "claudae_confidence": 0.95,
+          "processing_time": 1.6370489597320557
+        },
+        "success": true,
+        "error_message": null
+      },
+      {
+        "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/models/claudae/deployment_log.json",
+        "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/status/deployment_log_migrated.json",
+        "analysis": {
+          "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/models/claudae/deployment_log.json",
+          "content_type": "status",
+          "importance_score": 0.8,
+          "key_topics": [
+            "AI Deployment",
+            "Version Control",
+            "Family Wealth Protection"
+          ],
+          "relationships": [
+            "/home/honey-duo-wealth/honey_duo_wealth/ai_family/models/claudae/deployment_log.json",
+            "/home/honey-duo-wealth/honey_duo_wealth/ai_family/systems/claudae"
+          ],
+          "summary": "Log entry indicating successful deployment of version v1 of the family wealth protection AI (CLAUDAE) at the specified timestamp.",
+          "claudae_confidence": 0.9,
+          "processing_time": 1.8323309421539307
+        },
+        "success": true,
+        "error_message": null
+      },
+      {
+        "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/models/claudae/production/metadata.json",
+        "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/configuration/metadata_migrated.json",
+        "analysis": {
+          "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/models/claudae/production/metadata.json",
+          "content_type": "configuration",
+          "importance_score": 0.8,
+          "key_topics": [
+            "AI configuration",
+            "Model details",
+            "Performance metrics"
+          ],
+          "relationships": [
+            "/home/honey-duo-wealth/honey_duo_wealth/ai_family/models/claudae/production/training_data.json"
+          ],
+          "summary": "This document contains the configuration and performance metrics of AI model 'claudae' for family wealth protection.",
+          "claudae_confidence": 0.9,
+          "processing_time": 1.5175926685333252
+        },
+        "success": true,
+        "error_message": null
+      },
+      {
+        "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/training_data/datasets/claudae_training_20250604.json",
+        "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/blueprint/claudae_training_20250604_migrated.json",
+        "analysis": {
+          "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/training_data/datasets/claudae_training_20250604.json",
+          "content_type": "blueprint",
+          "importance_score": 0.8,
+          "key_topics": [
+            "AI family development",
+            "data integration",
+            "market data",
+            "AI consumption"
+          ],
+          "relationships": [
+            "/home/honey-duo-wealth/honey_duo_wealth/ai_family/training_data/datasets/claudae_training_20250604.json",
+            "data_pipeline"
+          ],
+          "summary": "This document outlines the development of an AI data bridge for integrating market data with the AI family, specifically focusing on formatting market data for AI consumption.",
+          "claudae_confidence": 0.9,
+          "processing_time": 1.9947962760925293
+        },
+        "success": true,
+        "error_message": null
+      },
+      {
+        "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/session_20250604.json",
+        "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/session/session_20250604_migrated.json",
+        "analysis": {
+          "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/session_20250604.json",
+          "content_type": "session",
+          "importance_score": 0.8,
+          "key_topics": [
+            "AI Family Testing",
+            "Foundation Setup",
+            "System Performance",
+            "Trading Engine"
+          ],
+          "relationships": [
+            "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/session_20250603.json",
+            "/home/honey-duo-wealth/honey_duo_wealth/system_monitor.py"
+          ],
+          "summary": "This document records the results of a testing session for the AI family members, focusing on system performance and trading engine functionality.",
+          "claudae_confidence": 0.9,
+          "processing_time": 2.071154832839966
+        },
+        "success": true,
+        "error_message": null
+      },
+      {
+        "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/training_summary.json",
+        "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/documentation/training_summary_migrated.json",
+        "analysis": {
+          "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/training_summary.json",
+          "content_type": "documentation",
+          "importance_score": 0.2,
+          "key_topics": [
+            "AI integration",
+            "Data pipeline",
+            "Trading",
+            "Testing"
+          ],
+          "relationships": [
+            "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/training_data.json",
+            "/home/honey-duo-wealth/honey_duo_wealth/systems/trading_system.yaml"
+          ],
+          "summary": "This document records a summary of the AI training session, detailing the categories (AI integration, testing, data pipeline, trading) and number of examples processed.",
+          "claudae_confidence": 0.8,
+          "processing_time": 1.877551794052124
+        },
+        "success": true,
+        "error_message": null
+      },
+      {
+        "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/daily_log_2025-06-04.json",
+        "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/blueprint/daily_log_2025-06-04_migrated.json",
+        "analysis": {
+          "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/daily_log_2025-06-04.json",
+          "content_type": "blueprint",
+          "importance_score": 0.7,
+          "key_topics": [
+            "AI development",
+            "Data pipeline",
+            "Market data collection",
+            "Family wealth protection"
+          ],
+          "relationships": [
+            "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/unified_data.py",
+            "market_collector",
+            "stock_collector"
+          ],
+          "summary": "This document contains the development of a unified data interface for collecting market data, including both stocks and cryptocurrencies, as part of an AI system designed to protect family wealth.",
+          "claudae_confidence": 0.8,
+          "processing_time": 2.110678195953369
+        },
+        "success": true,
+        "error_message": null
+      },
+      {
+        "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/ai_integration_examples.json",
+        "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/code_example/ai_integration_examples_migrated.json",
+        "analysis": {
+          "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/ai_integration_examples.json",
+          "content_type": "code_example",
+          "importance_score": 0.3,
+          "key_topics": [
+            "AI data integration",
+            "market data",
+            "family wealth"
+          ],
+          "relationships": [
+            "ai_data_integration.py",
+            "unified_data.py"
+          ],
+          "summary": "This document contains a Python code example for integrating market data with AI for family wealth protection.",
+          "claudae_confidence": 0.8,
+          "processing_time": 1.3732051849365234
+        },
+        "success": true,
+        "error_message": null
+      },
+      {
+        "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/test_examples.json",
+        "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/code_example/test_examples_migrated.json",
+        "analysis": {
+          "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/test_examples.json",
+          "content_type": "code_example",
+          "importance_score": 0.2,
+          "key_topics": [
+            "AI development",
+            "testing",
+            "active development pattern"
+          ],
+          "relationships": [],
+          "summary": "This document contains a test code example from the active development session.",
+          "claudae_confidence": 0.8,
+          "processing_time": 1.015848159790039
+        },
+        "success": true,
+        "error_message": null
+      },
+      {
+        "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/data_pipeline_examples.json",
+        "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/blueprint/data_pipeline_examples_migrated.json",
+        "analysis": {
+          "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/data_pipeline_examples.json",
+          "content_type": "blueprint",
+          "importance_score": 0.8,
+          "key_topics": [
+            "market_data_pipeline",
+            "unified_interface",
+            "stocks",
+            "cryptocurrencies"
+          ],
+          "relationships": [
+            "market_collector.py",
+            "stock_collector.py",
+            "logging.py"
+          ],
+          "summary": "This document outlines the creation of a unified data interface for collecting market data, specifically for stocks and cryptocurrencies, as part of the AI family's (CLAUDAE/NYALA/DEON) wealth protection system.",
+          "claudae_confidence": 0.9,
+          "processing_time": 1.8634545803070068
+        },
+        "success": true,
+        "error_message": null
+      },
+      {
+        "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/trading_examples.json",
+        "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/blueprint/trading_examples_migrated.json",
+        "analysis": {
+          "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/trading_examples.json",
+          "content_type": "blueprint",
+          "importance_score": 0.8,
+          "key_topics": [
+            "AI trading engine",
+            "NYALA integration",
+            "market data",
+            "trading recommendation"
+          ],
+          "relationships": [
+            "ai_family/nyala/nyala_test.py",
+            "ai_family/data_bridge.py"
+          ],
+          "summary": "This document outlines the implementation of a NYALA-integrated trading engine for making trading recommendations based on market data.",
+          "claudae_confidence": 0.9,
+          "processing_time": 1.6084909439086914
+        },
+        "success": true,
+        "error_message": null
+      },
+      {
+        "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/nyala_integration_20250604.json",
+        "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/session/nyala_integration_20250604_migrated.json",
+        "analysis": {
+          "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/nyala_integration_20250604.json",
+          "content_type": "session",
+          "importance_score": 0.5,
+          "key_topics": [
+            "AI integration",
+            "Trading engine",
+            "Market data"
+          ],
+          "relationships": [
+            "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/nyala_trading_engine.json"
+          ],
+          "summary": "This document records the integration of NYALA trading engine with market data, which is a step towards enhancing our AI family's ability to manage and protect family wealth.",
+          "claudae_confidence": 0.8,
+          "processing_time": 1.6862406730651855
+        },
+        "success": true,
+        "error_message": null
+      },
+      {
+        "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/test_session_20250604.json",
+        "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/session/status/test_session_20250604_migrated.json",
+        "analysis": {
+          "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/test_session_20250604.json",
+          "content_type": "session/status",
+          "importance_score": 0.2,
+          "key_topics": [
+            "AI training session",
+            "Test code",
+            "Family wealth protection (indirectly)"
+          ],
+          "relationships": [
+            "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/test_session.json",
+            "HONEY DUO WEALTH AI system"
+          ],
+          "summary": "This document contains a record of an AI training session for the test_session, which includes test code indirectly related to family wealth protection.",
+          "claudae_confidence": 0.8,
+          "processing_time": 1.7794790267944336
+        },
+        "success": true,
+        "error_message": null
+      },
+      {
+        "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/market_data_pipeline_20250604.json",
+        "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/session/market_data_pipeline_20250604_migrated.json",
+        "analysis": {
+          "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/market_data_pipeline_20250604.json",
+          "content_type": "session",
+          "importance_score": 0.2,
+          "key_topics": [
+            "data_pipeline",
+            "stocks",
+            "crypto"
+          ],
+          "relationships": [
+            "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/market_data_pipeline_20250601.json",
+            "Market Data System"
+          ],
+          "summary": "This document records a session about developing a unified interface for collecting market data on stocks and cryptocurrencies, contributing to the data pipeline for family wealth protection.",
+          "claudae_confidence": 0.8,
+          "processing_time": 1.7702605724334717
+        },
+        "success": true,
+        "error_message": null
+      },
+      {
+        "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/ai_data_integration_20250604.json",
+        "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/session/ai_data_integration_20250604_migrated.json",
+        "analysis": {
+          "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/ai_data_integration_20250604.json",
+          "content_type": "session",
+          "importance_score": 0.5,
+          "key_topics": [
+            "AI integration",
+            "Data bridge",
+            "Market data"
+          ],
+          "relationships": [
+            "ai_data_integration_20250605.json"
+          ],
+          "summary": "This document records the creation of a data bridge between market data and the AI family for integration purposes, contributing to the family wealth protection system.",
+          "claudae_confidence": 0.8,
+          "processing_time": 1.3578808307647705
+        },
+        "success": true,
+        "error_message": null
+      }
+    ],
+    "success": true,
+    "end_time": "2025-06-05T02:07:22.241459",
+    "success_rate": 1.0
+  },
+  "file_analysis": {
+    "README.md": {
+      "original_path": "/home/honey-duo-wealth/honey_duo_wealth/README.md",
+      "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/status/README_migrated.md",
+      "success": true,
+      "claudae_analysis": {
+        "file_path": "/home/honey-duo-wealth/honey_duo_wealth/README.md",
+        "content_type": "status",
+        "importance_score": 0.8,
+        "key_topics": [
+          "AI Portfolio Guardian",
+          "Phase 1: Foundation Complete",
+          "System Health"
+        ],
+        "relationships": [
+          "master_blueprint_v1.3.md",
+          "ai_family/ai_orchestrator.py"
+        ],
+        "summary": "This document provides the current status of the HONEY DUO WEALTH AI Portfolio Guardian, including its phase completion, system health overview, and quick start instructions.",
+        "claudae_confidence": 0.95,
+        "processing_time": 2.7529261112213135
+      }
+    },
+    "progress_report_20250604.md": {
+      "original_path": "/home/honey-duo-wealth/honey_duo_wealth/documentation/progress_report_20250604.md",
+      "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/status/progress_report_20250604_migrated.md",
+      "success": true,
+      "claudae_analysis": {
+        "file_path": "/home/honey-duo-wealth/honey_duo_wealth/documentation/progress_report_20250604.md",
+        "content_type": "status",
+        "importance_score": 0.8,
+        "key_topics": [
+          "AI Family Status",
+          "Component Status",
+          "Next Priorities",
+          "Training Progress"
+        ],
+        "relationships": [
+          "/home/honey-duo-wealth/honey_duo_wealth/documentation/ai_family_status_20250604.md",
+          "/home/honey-duo-wealth/honey_duo_wealth/documentation/component_status_20250604.md"
+        ],
+        "summary": "This document provides the status of AI family members (CLAUDAE, NYALA, DEON) and components within the HONEY DUO WEALTH project, including the market data pipeline, trading engine, communication system, and training progress for NYALA. The next priorities are to complete the market data pipeline and integrate NYALA's trading engine.",
+        "claudae_confidence": 0.95,
+        "processing_time": 2.5739333629608154
+      }
+    },
+    "master_blueprint.md": {
+      "original_path": "/home/honey-duo-wealth/honey_duo_wealth/project_memory/master_blueprint.md",
+      "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/blueprint/master_blueprint_migrated.md",
+      "success": true,
+      "claudae_analysis": {
+        "file_path": "/home/honey-duo-wealth/honey_duo_wealth/project_memory/master_blueprint.md",
+        "content_type": "blueprint",
+        "importance_score": 1.0,
+        "key_topics": [
+          "AI family",
+          "Family wealth protection",
+          "Project mission",
+          "System architecture",
+          "Hardware specifications"
+        ],
+        "relationships": [
+          "/home/honey-duo-wealth/honey_duo_wealth/project_memory/ai_family_development.md",
+          "/home/honey-duo-wealth/honey_duo_wealth/project_memory/risk_management_strategy.md"
+        ],
+        "summary": "This document outlines the master system blueprint and complete project archive for HONEY DUO WEALTH, a family AI portfolio guardian. It details the mission statement, complete system architecture including hardware specifications, and memory allocation for the AI family (CLAUDAE, NYALA, and DEON).",
+        "claudae_confidence": 1.0,
+        "processing_time": 2.5801303386688232
+      }
+    },
+    "session_handoff_june5.md": {
+      "original_path": "/home/honey-duo-wealth/honey_duo_wealth/project_memory/session_handoff_june5.md",
+      "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/session/session_handoff_june5_migrated.md",
+      "success": true,
+      "claudae_analysis": {
+        "file_path": "/home/honey-duo-wealth/honey_duo_wealth/project_memory/session_handoff_june5.md",
+        "content_type": "session",
+        "importance_score": 0.9,
+        "key_topics": [
+          "AI Training Infrastructure",
+          "Production Monitoring System",
+          "Testing Framework",
+          "Project Management"
+        ],
+        "relationships": [
+          "/home/honey-duo-wealth/honey_duo_wealth/project_memory/master_blueprint.md",
+          "/home/honey-duo-wealth/honey_duo_wealth/project_memory/ai_family_development.md"
+        ],
+        "summary": "This document details the major accomplishments of the HONEY DUO WEALTH project on June 5, 2025, including the completion of AI training infrastructure, production monitoring system, comprehensive testing framework, and advanced project management.",
+        "claudae_confidence": 1.0,
+        "processing_time": 2.278691291809082
+      }
+    },
+    "backup_june5_2241.md": {
+      "original_path": "/home/honey-duo-wealth/honey_duo_wealth/project_memory/backup_june5_2241.md",
+      "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/session handoff document/backup_june5_2241_migrated.md",
+      "success": true,
+      "claudae_analysis": {
+        "file_path": "/home/honey-duo-wealth/honey_duo_wealth/project_memory/backup_june5_2241.md",
+        "content_type": "session handoff document",
+        "importance_score": 0.8,
+        "key_topics": [
+          "AI Family Optimization",
+          "System Monitoring Dashboard",
+          "Remote Access Infrastructure",
+          "Development Environment"
+        ],
+        "relationships": [
+          "/home/honey-duo-wealth/honey_duo_wealth/project_memory/master_blueprint.md",
+          "/home/honey-duo-wealth/honey_duo_wealth/system_status.md"
+        ],
+        "summary": "This document details the major accomplishments during the June 4-5, 2025 session of the HONEY DUO WEALTH project, including AI Family Optimization, System Monitoring Dashboard setup, Remote Access Infrastructure configuration, and Development Environment preparation. The focus is on enhancing the family wealth protection system.",
+        "claudae_confidence": 1.0,
+        "processing_time": 2.57804799079895
+      }
+    },
+    "current_status.json": {
+      "original_path": "/home/honey-duo-wealth/honey_duo_wealth/project_memory/current_status.json",
+      "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/status/current_status_migrated.json",
+      "success": true,
+      "claudae_analysis": {
+        "file_path": "/home/honey-duo-wealth/honey_duo_wealth/project_memory/current_status.json",
+        "content_type": "status",
+        "importance_score": 0.9,
+        "key_topics": [
+          "AI Family Status",
+          "Component Status",
+          "Recent Changes",
+          "Next Priorities"
+        ],
+        "relationships": [
+          "/home/honey-duo-wealth/honey_duo_wealth/project_memory/component_status.json",
+          "/home/honey-duo-wealth/honey_duo_wealth/project_memory/ai_family_status.json"
+        ],
+        "summary": "This document provides the current status of AI family members (CLAUDAE, NYALA, DEON) and their associated components within the HONEY DUO WEALTH project, detailing recent changes and next priorities for improving the system.",
+        "claudae_confidence": 1.0,
+        "processing_time": 2.1220905780792236
+      }
+    },
+    "test_log.json": {
+      "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/test_log.json",
+      "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/status/test_log_migrated.json",
+      "success": true,
+      "claudae_analysis": {
+        "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/test_log.json",
+        "content_type": "status",
+        "importance_score": 0.9,
+        "key_topics": [
+          "Portfolio Performance",
+          "Risk Management",
+          "Compliance",
+          "Client Communications",
+          "System Maintenance"
+        ],
+        "relationships": [
+          "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/quarterly_performance_report.json"
+        ],
+        "summary": "This document provides a brief status report on the HONEY DUO WEALTH system, focusing on portfolio performance, risk management, compliance, client communications, and system maintenance.",
+        "claudae_confidence": 1.0,
+        "processing_time": 1.8809843063354492
+      }
+    },
+    "metadata.json": {
+      "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/models/claudae/production/metadata.json",
+      "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/configuration/metadata_migrated.json",
+      "success": true,
+      "claudae_analysis": {
+        "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/models/claudae/production/metadata.json",
+        "content_type": "configuration",
+        "importance_score": 0.8,
+        "key_topics": [
+          "AI configuration",
+          "Model details",
+          "Performance metrics"
+        ],
+        "relationships": [
+          "/home/honey-duo-wealth/honey_duo_wealth/ai_family/models/claudae/production/training_data.json"
+        ],
+        "summary": "This document contains the configuration and performance metrics of AI model 'claudae' for family wealth protection.",
+        "claudae_confidence": 0.9,
+        "processing_time": 1.5175926685333252
+      }
+    },
+    "deployment_log.json": {
+      "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/models/claudae/deployment_log.json",
+      "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/status/deployment_log_migrated.json",
+      "success": true,
+      "claudae_analysis": {
+        "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/models/claudae/deployment_log.json",
+        "content_type": "status",
+        "importance_score": 0.8,
+        "key_topics": [
+          "AI Deployment",
+          "Version Control",
+          "Family Wealth Protection"
+        ],
+        "relationships": [
+          "/home/honey-duo-wealth/honey_duo_wealth/ai_family/models/claudae/deployment_log.json",
+          "/home/honey-duo-wealth/honey_duo_wealth/ai_family/systems/claudae"
+        ],
+        "summary": "Log entry indicating successful deployment of version v1 of the family wealth protection AI (CLAUDAE) at the specified timestamp.",
+        "claudae_confidence": 0.9,
+        "processing_time": 1.8323309421539307
+      }
+    },
+    "claudae_training_20250604.json": {
+      "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/training_data/datasets/claudae_training_20250604.json",
+      "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/blueprint/claudae_training_20250604_migrated.json",
+      "success": true,
+      "claudae_analysis": {
+        "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/training_data/datasets/claudae_training_20250604.json",
+        "content_type": "blueprint",
+        "importance_score": 0.8,
+        "key_topics": [
+          "AI family development",
+          "data integration",
+          "market data",
+          "AI consumption"
+        ],
+        "relationships": [
+          "/home/honey-duo-wealth/honey_duo_wealth/ai_family/training_data/datasets/claudae_training_20250604.json",
+          "data_pipeline"
+        ],
+        "summary": "This document outlines the development of an AI data bridge for integrating market data with the AI family, specifically focusing on formatting market data for AI consumption.",
+        "claudae_confidence": 0.9,
+        "processing_time": 1.9947962760925293
+      }
+    },
+    "session_20250604.json": {
+      "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/session_20250604.json",
+      "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/session/session_20250604_migrated.json",
+      "success": true,
+      "claudae_analysis": {
+        "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/session_20250604.json",
+        "content_type": "session",
+        "importance_score": 0.8,
+        "key_topics": [
+          "AI Family Testing",
+          "Foundation Setup",
+          "System Performance",
+          "Trading Engine"
+        ],
+        "relationships": [
+          "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/session_20250603.json",
+          "/home/honey-duo-wealth/honey_duo_wealth/system_monitor.py"
+        ],
+        "summary": "This document records the results of a testing session for the AI family members, focusing on system performance and trading engine functionality.",
+        "claudae_confidence": 0.9,
+        "processing_time": 2.071154832839966
+      }
+    },
+    "training_summary.json": {
+      "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/training_summary.json",
+      "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/documentation/training_summary_migrated.json",
+      "success": true,
+      "claudae_analysis": {
+        "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/training_summary.json",
+        "content_type": "documentation",
+        "importance_score": 0.2,
+        "key_topics": [
+          "AI integration",
+          "Data pipeline",
+          "Trading",
+          "Testing"
+        ],
+        "relationships": [
+          "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/training_data.json",
+          "/home/honey-duo-wealth/honey_duo_wealth/systems/trading_system.yaml"
+        ],
+        "summary": "This document records a summary of the AI training session, detailing the categories (AI integration, testing, data pipeline, trading) and number of examples processed.",
+        "claudae_confidence": 0.8,
+        "processing_time": 1.877551794052124
+      }
+    },
+    "daily_log_2025-06-04.json": {
+      "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/daily_log_2025-06-04.json",
+      "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/blueprint/daily_log_2025-06-04_migrated.json",
+      "success": true,
+      "claudae_analysis": {
+        "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/daily_log_2025-06-04.json",
+        "content_type": "blueprint",
+        "importance_score": 0.7,
+        "key_topics": [
+          "AI development",
+          "Data pipeline",
+          "Market data collection",
+          "Family wealth protection"
+        ],
+        "relationships": [
+          "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/unified_data.py",
+          "market_collector",
+          "stock_collector"
+        ],
+        "summary": "This document contains the development of a unified data interface for collecting market data, including both stocks and cryptocurrencies, as part of an AI system designed to protect family wealth.",
+        "claudae_confidence": 0.8,
+        "processing_time": 2.110678195953369
+      }
+    },
+    "ai_integration_examples.json": {
+      "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/ai_integration_examples.json",
+      "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/code_example/ai_integration_examples_migrated.json",
+      "success": true,
+      "claudae_analysis": {
+        "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/ai_integration_examples.json",
+        "content_type": "code_example",
+        "importance_score": 0.3,
+        "key_topics": [
+          "AI data integration",
+          "market data",
+          "family wealth"
+        ],
+        "relationships": [
+          "ai_data_integration.py",
+          "unified_data.py"
+        ],
+        "summary": "This document contains a Python code example for integrating market data with AI for family wealth protection.",
+        "claudae_confidence": 0.8,
+        "processing_time": 1.3732051849365234
+      }
+    },
+    "test_examples.json": {
+      "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/test_examples.json",
+      "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/code_example/test_examples_migrated.json",
+      "success": true,
+      "claudae_analysis": {
+        "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/test_examples.json",
+        "content_type": "code_example",
+        "importance_score": 0.2,
+        "key_topics": [
+          "AI development",
+          "testing",
+          "active development pattern"
+        ],
+        "relationships": [],
+        "summary": "This document contains a test code example from the active development session.",
+        "claudae_confidence": 0.8,
+        "processing_time": 1.015848159790039
+      }
+    },
+    "data_pipeline_examples.json": {
+      "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/data_pipeline_examples.json",
+      "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/blueprint/data_pipeline_examples_migrated.json",
+      "success": true,
+      "claudae_analysis": {
+        "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/data_pipeline_examples.json",
+        "content_type": "blueprint",
+        "importance_score": 0.8,
+        "key_topics": [
+          "market_data_pipeline",
+          "unified_interface",
+          "stocks",
+          "cryptocurrencies"
+        ],
+        "relationships": [
+          "market_collector.py",
+          "stock_collector.py",
+          "logging.py"
+        ],
+        "summary": "This document outlines the creation of a unified data interface for collecting market data, specifically for stocks and cryptocurrencies, as part of the AI family's (CLAUDAE/NYALA/DEON) wealth protection system.",
+        "claudae_confidence": 0.9,
+        "processing_time": 1.8634545803070068
+      }
+    },
+    "trading_examples.json": {
+      "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/trading_examples.json",
+      "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/blueprint/trading_examples_migrated.json",
+      "success": true,
+      "claudae_analysis": {
+        "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/trading_examples.json",
+        "content_type": "blueprint",
+        "importance_score": 0.8,
+        "key_topics": [
+          "AI trading engine",
+          "NYALA integration",
+          "market data",
+          "trading recommendation"
+        ],
+        "relationships": [
+          "ai_family/nyala/nyala_test.py",
+          "ai_family/data_bridge.py"
+        ],
+        "summary": "This document outlines the implementation of a NYALA-integrated trading engine for making trading recommendations based on market data.",
+        "claudae_confidence": 0.9,
+        "processing_time": 1.6084909439086914
+      }
+    },
+    "nyala_integration_20250604.json": {
+      "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/nyala_integration_20250604.json",
+      "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/session/nyala_integration_20250604_migrated.json",
+      "success": true,
+      "claudae_analysis": {
+        "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/nyala_integration_20250604.json",
+        "content_type": "session",
+        "importance_score": 0.5,
+        "key_topics": [
+          "AI integration",
+          "Trading engine",
+          "Market data"
+        ],
+        "relationships": [
+          "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/nyala_trading_engine.json"
+        ],
+        "summary": "This document records the integration of NYALA trading engine with market data, which is a step towards enhancing our AI family's ability to manage and protect family wealth.",
+        "claudae_confidence": 0.8,
+        "processing_time": 1.6862406730651855
+      }
+    },
+    "test_session_20250604.json": {
+      "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/test_session_20250604.json",
+      "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/session/status/test_session_20250604_migrated.json",
+      "success": true,
+      "claudae_analysis": {
+        "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/test_session_20250604.json",
+        "content_type": "session/status",
+        "importance_score": 0.2,
+        "key_topics": [
+          "AI training session",
+          "Test code",
+          "Family wealth protection (indirectly)"
+        ],
+        "relationships": [
+          "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/test_session.json",
+          "HONEY DUO WEALTH AI system"
+        ],
+        "summary": "This document contains a record of an AI training session for the test_session, which includes test code indirectly related to family wealth protection.",
+        "claudae_confidence": 0.8,
+        "processing_time": 1.7794790267944336
+      }
+    },
+    "market_data_pipeline_20250604.json": {
+      "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/market_data_pipeline_20250604.json",
+      "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/session/market_data_pipeline_20250604_migrated.json",
+      "success": true,
+      "claudae_analysis": {
+        "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/market_data_pipeline_20250604.json",
+        "content_type": "session",
+        "importance_score": 0.2,
+        "key_topics": [
+          "data_pipeline",
+          "stocks",
+          "crypto"
+        ],
+        "relationships": [
+          "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/market_data_pipeline_20250601.json",
+          "Market Data System"
+        ],
+        "summary": "This document records a session about developing a unified interface for collecting market data on stocks and cryptocurrencies, contributing to the data pipeline for family wealth protection.",
+        "claudae_confidence": 0.8,
+        "processing_time": 1.7702605724334717
+      }
+    },
+    "ai_data_integration_20250604.json": {
+      "original_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/ai_data_integration_20250604.json",
+      "migrated_path": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/migration/organized_docs/session/ai_data_integration_20250604_migrated.json",
+      "success": true,
+      "claudae_analysis": {
+        "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/ai_data_integration_20250604.json",
+        "content_type": "session",
+        "importance_score": 0.5,
+        "key_topics": [
+          "AI integration",
+          "Data bridge",
+          "Market data"
+        ],
+        "relationships": [
+          "ai_data_integration_20250605.json"
+        ],
+        "summary": "This document records the creation of a data bridge between market data and the AI family for integration purposes, contributing to the family wealth protection system.",
+        "claudae_confidence": 0.8,
+        "processing_time": 1.3578808307647705
+      }
+    }
+  },
+  "categorization_review": {},
+  "content_preservation_check": {}
+}

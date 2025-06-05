@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-06-05T03:18:34.789868",
+  "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/training_summary.json",
+  "change_event": {
+    "file_path": "/home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/training_summary.json",
+    "event_type": "modified",
+    "timestamp": "2025-06-05T03:15:10.258847"
+  },
+  "claudae_analysis": {
+    "analysis_type": "integrated_change_analysis",
+    "file_type": "json",
+    "development_pattern": "Configuration Update",
+    "key_insight": "This change primarily updates the configuration settings and categories of examples.",
+    "importance_score": 0.6,
+    "learning_category": "config",
+    "technical_details": "The 'total_examples' field has been updated to 40, and the 'categories' field shows changes in various areas such as architecture, data, configuration, AI integration, test, data pipeline, trading, and feature.",
+    "project_impact": "This update may impact the training of models or system behavior depending on the specific settings modified.",
+    "documentation_trigger": true,
+    "documentation_type": "readme",
+    "architectural_change": false,
+    "component_affected": "Training Configuration",
+    "claudae_confidence": 0.8
+  },
+  "session_id": "integrated_20250605_031834"
+}
