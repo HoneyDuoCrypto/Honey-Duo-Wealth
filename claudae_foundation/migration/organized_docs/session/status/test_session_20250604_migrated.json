@@ -1,0 +1,31 @@
+<!-- CLAUDAE Analysis Metadata
+File: /home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/test_session_20250604.json
+Content Type: session/status
+Importance Score: 0.2
+Key Topics: AI training session, Test code, Family wealth protection (indirectly)
+Relationships: /home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/test_session.json, HONEY DUO WEALTH AI system
+Summary: This document contains a record of an AI training session for the test_session, which includes test code indirectly related to family wealth protection.
+CLAUDAE Confidence: 0.8
+Processing Time: 1.78s
+Migration Date: 2025-06-05T02:07:19.112290
+-->
+
+{
+  "summary": {
+    "session_name": "test_session",
+    "duration_minutes": 0,
+    "items_collected": 1,
+    "categories": [
+      "test"
+    ],
+    "timestamp": "2025-06-04T23:12:23.889308"
+  },
+  "log": [
+    {
+      "timestamp": "2025-06-04T23:12:22.423335",
+      "type": "code",
+      "description": "Test code",
+      "category": "test"
+    }
+  ]
+}

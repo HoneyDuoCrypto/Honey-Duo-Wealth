@@ -1,0 +1,30 @@
+<!-- CLAUDAE Analysis Metadata
+File: /home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/ai_integration_examples.json
+Content Type: code_example
+Importance Score: 0.3
+Key Topics: AI data integration, market data, family wealth
+Relationships: ai_data_integration.py, unified_data.py
+Summary: This document contains a Python code example for integrating market data with AI for family wealth protection.
+CLAUDAE Confidence: 0.8
+Processing Time: 1.37s
+Migration Date: 2025-06-05T02:07:11.157059
+-->
+
+[
+  {
+    "timestamp": "2025-06-04T23:15:53.831954",
+    "code": "\nimport sys\nsys.path.append('data_pipeline')\nfrom unified_data import UnifiedDataInterface\nimport json\n\nclass AIFamilyDataBridge:\n    def __init__(self):\n        self.data_interface = UnifiedDataInterface()\n        \n    def get_market_context_for_ai(self, symbols: list):\n        \"\"\"Format market data for AI consumption\"\"\"\n        prices = self.data_interface.get_portfolio_prices(symbols)\n        \n        context = {\n            \"market_data\": prices,\n            \"summary\": f\"Retrieved {len(prices)} price updates\",\n            \"timestamp\": prices.get(list(prices.keys())[0], {}).get(\"timestamp\") if prices else None\n        }\n        \n        return json.dumps(context, indent=2)\n",
+    "context": "Session: ai_data_integration - Data bridge between market data and AI family",
+    "category": "ai_integration",
+    "reasoning": "Active development pattern",
+    "tags": [
+      "ai_data_integration",
+      "active_dev"
+    ],
+    "hash": "83453a7f",
+    "file_pattern": [
+      "function_definition",
+      "module_import"
+    ]
+  }
+]

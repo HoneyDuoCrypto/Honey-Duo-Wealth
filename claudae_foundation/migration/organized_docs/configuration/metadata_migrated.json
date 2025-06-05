@@ -1,0 +1,43 @@
+<!-- CLAUDAE Analysis Metadata
+File: /home/honey-duo-wealth/honey_duo_wealth/ai_family/models/claudae/production/metadata.json
+Content Type: configuration
+Importance Score: 0.8
+Key Topics: AI configuration, Model details, Performance metrics
+Relationships: /home/honey-duo-wealth/honey_duo_wealth/ai_family/models/claudae/production/training_data.json
+Summary: This document contains the configuration and performance metrics of AI model 'claudae' for family wealth protection.
+CLAUDAE Confidence: 0.9
+Processing Time: 1.52s
+Migration Date: 2025-06-05T02:07:01.727737
+-->
+
+{
+  "version": "v1",
+  "ai_name": "claudae",
+  "base_model": "mistral:7b",
+  "created": "2025-06-04T23:40:49.662045",
+  "training_data_size": 0,
+  "performance_metrics": {
+    "average_score": 0.85,
+    "pass_rate": 1.0,
+    "total_tests": 3
+  },
+  "notes": "Initial version",
+  "status": "validated",
+  "validation_results": {
+    "code_generation": {
+      "score": 0.85,
+      "output": "Generated test output",
+      "passed": true
+    },
+    "error_handling": {
+      "score": 0.85,
+      "output": "Generated test output",
+      "passed": true
+    },
+    "project_knowledge": {
+      "score": 0.85,
+      "output": "Generated test output",
+      "passed": true
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "summary": {
+    "session_name": "nyala_integration",
+    "duration_minutes": 0,
+    "items_collected": 1,
+    "categories": [
+      "trading"
+    ],
+    "timestamp": "2025-06-04T23:16:28.031287"
+  },
+  "log": [
+    {
+      "timestamp": "2025-06-04T23:16:28.030919",
+      "type": "code",
+      "description": "NYALA trading engine with market data",
+      "category": "trading"
+    }
+  ]
+}

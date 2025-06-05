@@ -1,0 +1,25 @@
+{
+  "claudae_memory_config": {
+    "version": "1.0",
+    "deployment_phase": "foundation",
+    "project_root": "/home/honey-duo-wealth/honey_duo_wealth",
+    "foundation_dir": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation",
+    "claudae": {
+      "model": "mistral:7b",
+      "base_url": "http://localhost:11434",
+      "timeout": 120,
+      "temperature": 0.3
+    },
+    "safety": {
+      "backup_before_changes": true,
+      "validate_operations": true,
+      "rollback_on_failure": true,
+      "max_file_size_mb": 50
+    },
+    "training": {
+      "enabled": true,
+      "collection_enabled": false,
+      "training_data_dir": "/home/honey-duo-wealth/honey_duo_wealth/claudae_foundation/training_data"
+    }
+  }
+}

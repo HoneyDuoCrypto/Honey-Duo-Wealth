@@ -1,0 +1,30 @@
+<!-- CLAUDAE Analysis Metadata
+File: /home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/trading_examples.json
+Content Type: blueprint
+Importance Score: 0.8
+Key Topics: AI trading engine, NYALA integration, market data, trading recommendation
+Relationships: ai_family/nyala/nyala_test.py, ai_family/data_bridge.py
+Summary: This document outlines the implementation of a NYALA-integrated trading engine for making trading recommendations based on market data.
+CLAUDAE Confidence: 0.9
+Processing Time: 1.61s
+Migration Date: 2025-06-05T02:07:15.645837
+-->
+
+[
+  {
+    "timestamp": "2025-06-04T23:16:28.028910",
+    "code": "\nimport sys\nsys.path.append('.')\nfrom ai_family.data_bridge import AIFamilyDataBridge\nfrom ai_family.nyala.nyala_test import query_nyala\n\nclass NYALATradingEngine:\n    def __init__(self):\n        self.data_bridge = AIFamilyDataBridge()\n        \n    def analyze_symbol(self, symbol: str):\n        \"\"\"Get NYALA's trading recommendation\"\"\"\n        # Get current market data\n        market_context = self.data_bridge.get_market_context_for_ai([symbol])\n        \n        # Prepare prompt for NYALA\n        prompt = f\"\"\"\n        Analyze this market data and provide a trading recommendation:\n        {market_context}\n        \n        Consider:\n        - Current price trends\n        - Risk assessment\n        - Position sizing recommendation\n        \n        Respond with: BUY/SELL/HOLD and confidence (1-100)\n        \"\"\"\n        \n        # Query NYALA for decision\n        response = query_nyala(prompt)\n        return {\n            \"symbol\": symbol,\n            \"recommendation\": response,\n            \"market_data\": market_context\n        }\n",
+    "context": "Session: nyala_integration - NYALA trading engine with market data",
+    "category": "trading",
+    "reasoning": "Active development pattern",
+    "tags": [
+      "nyala_integration",
+      "active_dev"
+    ],
+    "hash": "79a470cd",
+    "file_pattern": [
+      "function_definition",
+      "module_import"
+    ]
+  }
+]

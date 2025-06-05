@@ -1,0 +1,18 @@
+[
+  {
+    "timestamp": "2025-06-04T23:16:28.028910",
+    "code": "\nimport sys\nsys.path.append('.')\nfrom ai_family.data_bridge import AIFamilyDataBridge\nfrom ai_family.nyala.nyala_test import query_nyala\n\nclass NYALATradingEngine:\n    def __init__(self):\n        self.data_bridge = AIFamilyDataBridge()\n        \n    def analyze_symbol(self, symbol: str):\n        \"\"\"Get NYALA's trading recommendation\"\"\"\n        # Get current market data\n        market_context = self.data_bridge.get_market_context_for_ai([symbol])\n        \n        # Prepare prompt for NYALA\n        prompt = f\"\"\"\n        Analyze this market data and provide a trading recommendation:\n        {market_context}\n        \n        Consider:\n        - Current price trends\n        - Risk assessment\n        - Position sizing recommendation\n        \n        Respond with: BUY/SELL/HOLD and confidence (1-100)\n        \"\"\"\n        \n        # Query NYALA for decision\n        response = query_nyala(prompt)\n        return {\n            \"symbol\": symbol,\n            \"recommendation\": response,\n            \"market_data\": market_context\n        }\n",
+    "context": "Session: nyala_integration - NYALA trading engine with market data",
+    "category": "trading",
+    "reasoning": "Active development pattern",
+    "tags": [
+      "nyala_integration",
+      "active_dev"
+    ],
+    "hash": "79a470cd",
+    "file_pattern": [
+      "function_definition",
+      "module_import"
+    ]
+  }
+]

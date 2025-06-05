@@ -1,0 +1,31 @@
+<!-- CLAUDAE Analysis Metadata
+File: /home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/ai_data_integration_20250604.json
+Content Type: session
+Importance Score: 0.5
+Key Topics: AI integration, Data bridge, Market data
+Relationships: ai_data_integration_20250605.json
+Summary: This document records the creation of a data bridge between market data and the AI family for integration purposes, contributing to the family wealth protection system.
+CLAUDAE Confidence: 0.8
+Processing Time: 1.36s
+Migration Date: 2025-06-05T02:07:22.241079
+-->
+
+{
+  "summary": {
+    "session_name": "ai_data_integration",
+    "duration_minutes": 0,
+    "items_collected": 1,
+    "categories": [
+      "ai_integration"
+    ],
+    "timestamp": "2025-06-04T23:15:53.833760"
+  },
+  "log": [
+    {
+      "timestamp": "2025-06-04T23:15:53.833442",
+      "type": "code",
+      "description": "Data bridge between market data and AI family",
+      "category": "ai_integration"
+    }
+  ]
+}

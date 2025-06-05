@@ -1,0 +1,31 @@
+<!-- CLAUDAE Analysis Metadata
+File: /home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/data_pipeline_examples.json
+Content Type: blueprint
+Importance Score: 0.8
+Key Topics: market_data_pipeline, unified_interface, stocks, cryptocurrencies
+Relationships: market_collector.py, stock_collector.py, logging.py
+Summary: This document outlines the creation of a unified data interface for collecting market data, specifically for stocks and cryptocurrencies, as part of the AI family's (CLAUDAE/NYALA/DEON) wealth protection system.
+CLAUDAE Confidence: 0.9
+Processing Time: 1.86s
+Migration Date: 2025-06-05T02:07:14.037007
+-->
+
+[
+  {
+    "timestamp": "2025-06-04T23:14:39.632192",
+    "code": "\nfrom market_collector import MarketDataCollector\nfrom stock_collector import StockDataCollector\nimport logging\n\nclass UnifiedDataInterface:\n    def __init__(self):\n        self.crypto_collector = MarketDataCollector()\n        self.stock_collector = StockDataCollector()\n        self.logger = logging.getLogger('unified_data')\n        \n    def get_price(self, symbol: str, asset_type: str = \"auto\"):\n        \"\"\"Get price for any asset\"\"\"\n        if asset_type == \"crypto\" or (asset_type == \"auto\" and \"-\" in symbol.lower()):\n            return self.crypto_collector.get_crypto_price(symbol)\n        else:\n            return self.stock_collector.get_stock_price(symbol)\n            \n    def get_portfolio_prices(self, symbols: list):\n        \"\"\"Get prices for multiple assets\"\"\"\n        results = {}\n        for symbol in symbols:\n            price_data = self.get_price(symbol)\n            if price_data:\n                results[symbol] = price_data\n        return results\n",
+    "context": "Session: market_data_pipeline - Unified interface for stocks and crypto",
+    "category": "data_pipeline",
+    "reasoning": "Active development pattern",
+    "tags": [
+      "market_data_pipeline",
+      "active_dev"
+    ],
+    "hash": "8a923fd8",
+    "file_pattern": [
+      "logging",
+      "function_definition",
+      "module_import"
+    ]
+  }
+]

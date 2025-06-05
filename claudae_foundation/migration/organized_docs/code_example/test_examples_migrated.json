@@ -1,0 +1,27 @@
+<!-- CLAUDAE Analysis Metadata
+File: /home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/test_examples.json
+Content Type: code_example
+Importance Score: 0.2
+Key Topics: AI development, testing, active development pattern
+Relationships: 
+Summary: This document contains a test code example from the active development session.
+CLAUDAE Confidence: 0.8
+Processing Time: 1.02s
+Migration Date: 2025-06-05T02:07:12.173215
+-->
+
+[
+  {
+    "timestamp": "2025-06-04T23:12:22.423145",
+    "code": "print('hello')",
+    "context": "Session: test_session - Test code",
+    "category": "test",
+    "reasoning": "Active development pattern",
+    "tags": [
+      "test_session",
+      "active_dev"
+    ],
+    "hash": "e73b48e8",
+    "file_pattern": []
+  }
+]

@@ -1,0 +1,25 @@
+<!-- CLAUDAE Analysis Metadata
+File: /home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/training_summary.json
+Content Type: documentation
+Importance Score: 0.2
+Key Topics: AI integration, Data pipeline, Trading, Testing
+Relationships: /home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/training_data.json, /home/honey-duo-wealth/honey_duo_wealth/systems/trading_system.yaml
+Summary: This document records a summary of the AI training session, detailing the categories (AI integration, testing, data pipeline, trading) and number of examples processed.
+CLAUDAE Confidence: 0.8
+Processing Time: 1.88s
+Migration Date: 2025-06-05T02:07:07.672383
+-->
+
+{
+  "generation_date": "2025-06-05T01:55:37.280776",
+  "total_examples": 4,
+  "categories": {
+    "ai_integration": 1,
+    "test": 1,
+    "data_pipeline": 1,
+    "trading": 1
+  },
+  "key_patterns": [],
+  "frequent_solutions": [],
+  "recent_activity": []
+}

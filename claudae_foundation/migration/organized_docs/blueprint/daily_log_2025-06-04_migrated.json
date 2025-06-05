@@ -1,0 +1,76 @@
+<!-- CLAUDAE Analysis Metadata
+File: /home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/daily_log_2025-06-04.json
+Content Type: blueprint
+Importance Score: 0.7
+Key Topics: AI development, Data pipeline, Market data collection, Family wealth protection
+Relationships: /home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/code_examples/unified_data.py, market_collector, stock_collector
+Summary: This document contains the development of a unified data interface for collecting market data, including both stocks and cryptocurrencies, as part of an AI system designed to protect family wealth.
+CLAUDAE Confidence: 0.8
+Processing Time: 2.11s
+Migration Date: 2025-06-05T02:07:09.783413
+-->
+
+[
+  {
+    "timestamp": "2025-06-04T23:12:22.423145",
+    "code": "print('hello')",
+    "context": "Session: test_session - Test code",
+    "category": "test",
+    "reasoning": "Active development pattern",
+    "tags": [
+      "test_session",
+      "active_dev"
+    ],
+    "hash": "e73b48e8",
+    "file_pattern": []
+  },
+  {
+    "timestamp": "2025-06-04T23:14:39.632192",
+    "code": "\nfrom market_collector import MarketDataCollector\nfrom stock_collector import StockDataCollector\nimport logging\n\nclass UnifiedDataInterface:\n    def __init__(self):\n        self.crypto_collector = MarketDataCollector()\n        self.stock_collector = StockDataCollector()\n        self.logger = logging.getLogger('unified_data')\n        \n    def get_price(self, symbol: str, asset_type: str = \"auto\"):\n        \"\"\"Get price for any asset\"\"\"\n        if asset_type == \"crypto\" or (asset_type == \"auto\" and \"-\" in symbol.lower()):\n            return self.crypto_collector.get_crypto_price(symbol)\n        else:\n            return self.stock_collector.get_stock_price(symbol)\n            \n    def get_portfolio_prices(self, symbols: list):\n        \"\"\"Get prices for multiple assets\"\"\"\n        results = {}\n        for symbol in symbols:\n            price_data = self.get_price(symbol)\n            if price_data:\n                results[symbol] = price_data\n        return results\n",
+    "context": "Session: market_data_pipeline - Unified interface for stocks and crypto",
+    "category": "data_pipeline",
+    "reasoning": "Active development pattern",
+    "tags": [
+      "market_data_pipeline",
+      "active_dev"
+    ],
+    "hash": "8a923fd8",
+    "file_pattern": [
+      "logging",
+      "function_definition",
+      "module_import"
+    ]
+  },
+  {
+    "timestamp": "2025-06-04T23:15:53.831954",
+    "code": "\nimport sys\nsys.path.append('data_pipeline')\nfrom unified_data import UnifiedDataInterface\nimport json\n\nclass AIFamilyDataBridge:\n    def __init__(self):\n        self.data_interface = UnifiedDataInterface()\n        \n    def get_market_context_for_ai(self, symbols: list):\n        \"\"\"Format market data for AI consumption\"\"\"\n        prices = self.data_interface.get_portfolio_prices(symbols)\n        \n        context = {\n            \"market_data\": prices,\n            \"summary\": f\"Retrieved {len(prices)} price updates\",\n            \"timestamp\": prices.get(list(prices.keys())[0], {}).get(\"timestamp\") if prices else None\n        }\n        \n        return json.dumps(context, indent=2)\n",
+    "context": "Session: ai_data_integration - Data bridge between market data and AI family",
+    "category": "ai_integration",
+    "reasoning": "Active development pattern",
+    "tags": [
+      "ai_data_integration",
+      "active_dev"
+    ],
+    "hash": "83453a7f",
+    "file_pattern": [
+      "function_definition",
+      "module_import"
+    ]
+  },
+  {
+    "timestamp": "2025-06-04T23:16:28.028910",
+    "code": "\nimport sys\nsys.path.append('.')\nfrom ai_family.data_bridge import AIFamilyDataBridge\nfrom ai_family.nyala.nyala_test import query_nyala\n\nclass NYALATradingEngine:\n    def __init__(self):\n        self.data_bridge = AIFamilyDataBridge()\n        \n    def analyze_symbol(self, symbol: str):\n        \"\"\"Get NYALA's trading recommendation\"\"\"\n        # Get current market data\n        market_context = self.data_bridge.get_market_context_for_ai([symbol])\n        \n        # Prepare prompt for NYALA\n        prompt = f\"\"\"\n        Analyze this market data and provide a trading recommendation:\n        {market_context}\n        \n        Consider:\n        - Current price trends\n        - Risk assessment\n        - Position sizing recommendation\n        \n        Respond with: BUY/SELL/HOLD and confidence (1-100)\n        \"\"\"\n        \n        # Query NYALA for decision\n        response = query_nyala(prompt)\n        return {\n            \"symbol\": symbol,\n            \"recommendation\": response,\n            \"market_data\": market_context\n        }\n",
+    "context": "Session: nyala_integration - NYALA trading engine with market data",
+    "category": "trading",
+    "reasoning": "Active development pattern",
+    "tags": [
+      "nyala_integration",
+      "active_dev"
+    ],
+    "hash": "79a470cd",
+    "file_pattern": [
+      "function_definition",
+      "module_import"
+    ]
+  }
+]

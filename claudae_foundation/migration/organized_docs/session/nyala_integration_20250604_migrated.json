@@ -1,0 +1,31 @@
+<!-- CLAUDAE Analysis Metadata
+File: /home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/nyala_integration_20250604.json
+Content Type: session
+Importance Score: 0.5
+Key Topics: AI integration, Trading engine, Market data
+Relationships: /home/honey-duo-wealth/honey_duo_wealth/ai_family/claudae/training/sessions/nyala_trading_engine.json
+Summary: This document records the integration of NYALA trading engine with market data, which is a step towards enhancing our AI family's ability to manage and protect family wealth.
+CLAUDAE Confidence: 0.8
+Processing Time: 1.69s
+Migration Date: 2025-06-05T02:07:17.332413
+-->
+
+{
+  "summary": {
+    "session_name": "nyala_integration",
+    "duration_minutes": 0,
+    "items_collected": 1,
+    "categories": [
+      "trading"
+    ],
+    "timestamp": "2025-06-04T23:16:28.031287"
+  },
+  "log": [
+    {
+      "timestamp": "2025-06-04T23:16:28.030919",
+      "type": "code",
+      "description": "NYALA trading engine with market data",
+      "category": "trading"
+    }
+  ]
+}

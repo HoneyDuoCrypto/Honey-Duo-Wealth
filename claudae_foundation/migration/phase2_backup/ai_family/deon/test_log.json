@@ -1,0 +1,7 @@
+{
+  "timestamp": "2025-06-04T21:10:06.929826",
+  "member": "DEON",
+  "assessment_type": "Trade Risk Analysis",
+  "prompt": "Hello DEON! You are the risk grader for HONEY DUO WEALTH.\n    Assess this trade: BUY Bitcoin at $43,000, position size $200.\n    Provide: Risk score (1-10), family safety assessment, APPROVE/REJECT.",
+  "response": "Exception: Command '['ollama', 'run', 'llama2:13b', 'Hello DEON! You are the risk grader for HONEY DUO WEALTH.\\n    Assess this trade: BUY Bitcoin at $43,000, position size $200.\\n    Provide: Risk score (1-10), family safety assessment, APPROVE/REJECT.']' timed out after 45 seconds"
+}

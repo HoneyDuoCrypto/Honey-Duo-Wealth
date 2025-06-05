@@ -1,0 +1,18 @@
+[
+  {
+    "timestamp": "2025-06-04T23:15:53.831954",
+    "code": "\nimport sys\nsys.path.append('data_pipeline')\nfrom unified_data import UnifiedDataInterface\nimport json\n\nclass AIFamilyDataBridge:\n    def __init__(self):\n        self.data_interface = UnifiedDataInterface()\n        \n    def get_market_context_for_ai(self, symbols: list):\n        \"\"\"Format market data for AI consumption\"\"\"\n        prices = self.data_interface.get_portfolio_prices(symbols)\n        \n        context = {\n            \"market_data\": prices,\n            \"summary\": f\"Retrieved {len(prices)} price updates\",\n            \"timestamp\": prices.get(list(prices.keys())[0], {}).get(\"timestamp\") if prices else None\n        }\n        \n        return json.dumps(context, indent=2)\n",
+    "context": "Session: ai_data_integration - Data bridge between market data and AI family",
+    "category": "ai_integration",
+    "reasoning": "Active development pattern",
+    "tags": [
+      "ai_data_integration",
+      "active_dev"
+    ],
+    "hash": "83453a7f",
+    "file_pattern": [
+      "function_definition",
+      "module_import"
+    ]
+  }
+]
