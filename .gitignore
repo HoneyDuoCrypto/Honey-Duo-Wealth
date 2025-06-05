@@ -1,0 +1,61 @@
+# HONEY DUO WEALTH - Git Ignore File
+
+# AI Model Files (too large for Git)
+*.bin
+*.ggml
+*.gguf
+ai_family/*/models/
+*.model
+
+# Sensitive Data
+*.env
+*.key
+api_keys/
+secrets/
+trading_systems/live_trader/keys/
+
+# Logs and Data
+*.log
+execution_logs/
+data_pipeline/market_data/
+/mnt/honey_duo_storage/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Trading Data (keep private)
+portfolio_data/
+trade_history/
+performance_reports/
