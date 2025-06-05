@@ -1,0 +1,1 @@
+class MarketDataCollector: pass

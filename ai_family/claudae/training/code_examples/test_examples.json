@@ -1,0 +1,15 @@
+[
+  {
+    "timestamp": "2025-06-04T23:12:22.423145",
+    "code": "print('hello')",
+    "context": "Session: test_session - Test code",
+    "category": "test",
+    "reasoning": "Active development pattern",
+    "tags": [
+      "test_session",
+      "active_dev"
+    ],
+    "hash": "e73b48e8",
+    "file_pattern": []
+  }
+]

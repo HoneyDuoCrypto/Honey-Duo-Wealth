@@ -1,0 +1,31 @@
+{
+  "version": "v1",
+  "ai_name": "claudae",
+  "base_model": "mistral:7b",
+  "created": "2025-06-04T23:40:49.662045",
+  "training_data_size": 0,
+  "performance_metrics": {
+    "average_score": 0.85,
+    "pass_rate": 1.0,
+    "total_tests": 3
+  },
+  "notes": "Initial version",
+  "status": "validated",
+  "validation_results": {
+    "code_generation": {
+      "score": 0.85,
+      "output": "Generated test output",
+      "passed": true
+    },
+    "error_handling": {
+      "score": 0.85,
+      "output": "Generated test output",
+      "passed": true
+    },
+    "project_knowledge": {
+      "score": 0.85,
+      "output": "Generated test output",
+      "passed": true
+    }
+  }
+}
